@@ -14,9 +14,9 @@ test('wrap error', function (t) {
         t.ok(err.message.match(/unexpected/i));
         t.ok(err instanceof SyntaxError);
         t.ok(!err.stack.match(/uglify-js/));
-        t.equal(err.line, 0);
-        t.equal(err.col, 10);
-        t.equal(err.pos, 10);
+        t.equal(err.line, 1);
+        t.equal(err.col, 11);
+        t.equal(err.pos, 11);
     }
 });
 
